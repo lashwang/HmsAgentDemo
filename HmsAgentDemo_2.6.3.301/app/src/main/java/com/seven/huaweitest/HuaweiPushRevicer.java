@@ -9,6 +9,7 @@ import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.huawei.hms.support.api.push.PushReceiver;
 
@@ -80,6 +81,9 @@ public class HuaweiPushRevicer extends PushReceiver {
         intent.setAction(ACTION_UPDATEUI);
         intent.putExtra("log", "belongId is:" + belongId + " Token is:" + tokenIn);
         callBack(intent);
+
+        Log.v(TAG,"token is:" + tokenIn);
+
     }
 
     @Override
@@ -91,6 +95,7 @@ public class HuaweiPushRevicer extends PushReceiver {
             intent.setAction(ACTION_UPDATEUI);
             intent.putExtra("log", "Receive a push pass message with the message:" + content);
             callBack(intent);
+            Log.v(TAG,"onPushMsg,content is:" + content);
         } catch (Exception e) {
             Intent intent = new Intent();
             intent.setAction(ACTION_UPDATEUI);
@@ -126,6 +131,7 @@ public class HuaweiPushRevicer extends PushReceiver {
         intent.setAction(ACTION_UPDATEUI);
         intent.putExtra("log", "The Push connection status is:" + pushState);
         callBack(intent);
+        Log.v(TAG,"onPushState,pushState is:" + pushState);
     }
 
     private static void callBack(Intent intent) {
