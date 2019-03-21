@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.huawei.hmsagentsamplexsj">
+    package="com.seven.huaweitest">
 
     <!-- HMS-SDK引导升级HMS功能，访问OTA服务器需要网络权限 -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -16,11 +16,11 @@
     <!-- 如果是安卓8.0，应用编译配置的targetSdkVersion>=26，请务必添加以下权限 -->
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
     <permission
-        android:name="com.huawei.hmsagentsamplexsj.permission.PROCESS_PUSH_MSG"
+        android:name="com.seven.huaweitest.permission.PROCESS_PUSH_MSG"
         android:protectionLevel="signatureOrSystem" />
 
     <!--接收PUSH TOKEN的广播以及PUSH消息需要定义该权限 ${PACKAGE_NAME} 要替换上您应用的包名 -->
-    <uses-permission android:name="com.huawei.hmsagentsamplexsj.permission.PROCESS_PUSH_MSG" />
+    <uses-permission android:name="com.seven.huaweitest.permission.PROCESS_PUSH_MSG" />
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
@@ -33,7 +33,7 @@
 
         <meta-data
             android:name="com.huawei.hms.client.appid"
-            android:value="appid=100587569" />
+            android:value="appid=100672485" />
 
         <activity
             android:name="com.huawei.appmarket.component.buoycircle.impl.delegete.BuoyBridgeActivity"
@@ -62,7 +62,7 @@
 
         <provider
             android:name="com.huawei.hms.update.provider.UpdateProvider"
-            android:authorities="com.huawei.hmsagentsamplexsj.hms.update.provider"
+            android:authorities="com.seven.huaweitest.hms.update.provider"
             android:exported="false"
             android:grantUriPermissions="true" />
 
@@ -101,7 +101,7 @@
 
         <provider
             android:name="com.huawei.updatesdk.fileprovider.UpdateSdkFileProvider"
-            android:authorities="com.huawei.hmsagentsamplexsj.updateSdk.fileProvider"
+            android:authorities="com.seven.huaweitest.updateSdk.fileProvider"
             android:exported="false"
             android:grantUriPermissions="true"></provider>
 
@@ -115,7 +115,7 @@
                 参考示例代码中的类：com.huawei.hmsagent.HuaweiPushRevicer${PACKAGE_NAME} 要替换上您应用的包名-->
         <receiver
             android:name=".HuaweiPushRevicer"
-            android:permission="com.huawei.hmsagentsamplexsj.permission.PROCESS_PUSH_MSG">
+            android:permission="com.seven.huaweitest.permission.PROCESS_PUSH_MSG">
             <intent-filter>
                 <!-- 必须,用于接收token -->
                 <action android:name="com.huawei.android.push.intent.REGISTRATION" />
@@ -182,7 +182,7 @@
                 android:name="hwc-theme"
                 android:value="androidhwext:style/Theme.Emui.Translucent" />
         </activity>
-        <activity android:name="com.huawei.hmsagentsamplexsj.HwIDActivity">
+        <activity android:name="com.seven.huaweitest.HwIDActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

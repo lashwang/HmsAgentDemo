@@ -1,4 +1,4 @@
-package com.huawei.hmsagentsamplexsj;
+package com.seven.huaweitest;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -14,8 +14,8 @@ import com.huawei.android.hms.agent.push.handler.GetPushStateHandler;
 import com.huawei.android.hms.agent.push.handler.GetTokenHandler;
 import com.huawei.android.hms.agent.push.handler.QueryAgreementHandler;
 
-import static com.huawei.hmsagentsamplexsj.HuaweiPushRevicer.ACTION_TOKEN;
-import static com.huawei.hmsagentsamplexsj.HuaweiPushRevicer.ACTION_UPDATEUI;
+import static com.seven.huaweitest.HuaweiPushRevicer.ACTION_TOKEN;
+import static com.seven.huaweitest.HuaweiPushRevicer.ACTION_UPDATEUI;
 
 
 public class PushActivity extends AgentBaseActivity implements HuaweiPushRevicer.IPushCallback {

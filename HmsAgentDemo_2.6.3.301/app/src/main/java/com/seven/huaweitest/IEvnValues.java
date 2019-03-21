@@ -1,4 +1,4 @@
-package com.huawei.hmsagentsamplexsj;
+package com.seven.huaweitest;
 
 /**
  * 环境变量配置，私钥需要放在服务器端，这里只是给个处理示例 | environment variable configuration, the private key needs to be placed on the server side, here is just a sample processing

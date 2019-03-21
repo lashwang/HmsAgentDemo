@@ -1,4 +1,4 @@
-package com.huawei.hmsagentsamplexsj;
+package com.seven.huaweitest;
 
 import android.graphics.Color;
 import android.os.Bundle;

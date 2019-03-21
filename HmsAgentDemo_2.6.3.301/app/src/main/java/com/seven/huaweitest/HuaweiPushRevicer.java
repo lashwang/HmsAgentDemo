@@ -3,7 +3,7 @@
  * See LICENSE.txt for this sample's licensing information.
  */
 
-package com.huawei.hmsagentsamplexsj;
+package com.seven.huaweitest;
 
 import android.app.NotificationManager;
 import android.content.Context;
